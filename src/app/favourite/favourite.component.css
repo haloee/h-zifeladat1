@@ -1,0 +1,34 @@
+.pokemon-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .pokemon-card {
+    width: 25%; /* Állítsa be a megfelelő méretet az igényeinek megfelelően */
+    margin: 1%;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .pokemon-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .pokemon-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .pokemon-info p {
+    margin: 0;
+    flex: 0;
+    align-items: center;
+  }
+  
+  .pokemon-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  

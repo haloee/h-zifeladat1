@@ -1,0 +1,31 @@
+<form (submit)="searchPokemon()">
+  <div class="matInput">
+    <mat-form-field class="custom-form-field">
+      <input matInput placeholder="Search for Pokémon" id="pokemonName" [(ngModel)]="searchTerm" name="searchTerm" />
+    </mat-form-field>
+
+    <button mat-fab type="submit"><mat-icon>search</mat-icon></button>
+  </div>
+</form>
+  <!-- src/app/search/search.component.html -->
+
+
+
+  <form (submit)="searchPokemon()">
+    <!-- ... Search form ... -->
+  </form>
+  
+  <div class="search" *ngIf="searchResult">
+    <div class="name"><h1 font-weight="bold"> {{ searchResult.name }}</h1></div>
+
+    <p *ngIf="pokemonTypes.length > 0"> {{ pokemonTypes.join(', ') }}</p>
+    <!-- Display the Pokémon's image -->
+    
+    <img *ngIf="pokemonArtwork" [src]="pokemonArtwork" alt="Pokemon artwork">
+    <div class="error-message" *ngIf="errorMessage">
+      {{ errorMessage }}
+    </div><div class="loading"> <app-loading-indicator *ngIf="loading"><mat-spinner></mat-spinner></app-loading-indicator></div>
+   
+    <button class="safe" mat-raised-button color="primary" (click)="savePokemon()">Save</button>
+    <a routerLink="/favourite" mat-button color="primary">View Saved Pokémon</a>
+  </div>

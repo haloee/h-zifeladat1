@@ -1,0 +1,48 @@
+.search{
+    height: 500px;
+    top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+position: absolute;
+
+}
+.img{
+    height: 500px;
+    top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+position: absolute; 
+}
+.searchinput{
+    top: 50%;
+left: 50%;
+transform: translate(-50%, -1100%);
+position: absolute; 
+}
+.matInput{
+    top: 50%;
+left: 50%;
+transform: translate(-50%, -440%);
+position: absolute;
+}
+.custom-form-field{
+    width: 200px;
+}
+.mat-input-container{
+    width: 300px;
+}
+.search .safe{
+    top: 50%;
+left: 50%;
+transform: translate(-50%, -730%);
+position: absolute;
+}
+.loading{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.search name{
+    font-weight: bold;
+}

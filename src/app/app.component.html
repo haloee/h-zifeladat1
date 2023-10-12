@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  
+  <!-- Add the UI5 Web Components script import here -->
+  <script type="module" src="https://unpkg.com/@ui5/webcomponents@latest/dist/Assets.js"></script>
+  
+  <!-- Define CSS rule to change background color -->
+  <style>
+    .bar {
+      background-color: red; /* Replace with your desired background color */
+    }
+  </style>
+</head>
+<body>
+  <!-- Your UI5 ShellBar code here -->
+
+  <mat-toolbar>
+    
+    <img slot="logo" class="logo" src="/assets/images/logo2.svg" />
+    
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon" [routerLink]="['search']" routerLinkActive="active">
+      <mat-icon>search</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" [routerLink]="['favourite']" routerLinkActive="active">
+      <mat-icon>star</mat-icon>
+    </button>
+  </mat-toolbar>
+
+  
+    
+  
+  <router-outlet></router-outlet>
+</body>
+</html>
